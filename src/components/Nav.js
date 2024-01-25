@@ -21,7 +21,6 @@ const Nav = () => {
     justify-content: space-between;
     align-items: center;
     
-    padding: 1rem 3rem;
     position: relative;
 
       .navbar-link {
