@@ -45,7 +45,7 @@ return (
     </div>
 
     <div className="filter-category">
-      <h3>Category</h3>
+      <h3>Loại Sản Phẩm</h3>
       <div>
         {categoryData.map((curElem, index) => {
           return (
@@ -64,7 +64,7 @@ return (
     </div>
 
     <div className="filter-company">
-      <h3>Company</h3>
+      <h3>Hãng</h3>
 
       <form action="#">
         <select
@@ -84,7 +84,7 @@ return (
     </div>
 
     <div className="filter-colors colors">
-        <h3>Colors</h3>
+        <h3>Màu Sắc</h3>
 
         <div className="filter-color-style">
           {colorsData.map((curColor, index) => {
@@ -117,7 +117,7 @@ return (
         </div>
       </div>
       <div className="filter_price">
-        <h3>Price</h3>
+        <h3>Giá</h3>
         <p>
           <FormatPrice price={price} />
         </p>
@@ -132,7 +132,7 @@ return (
       </div>
         <div className="filter-clear">
           <Button className="btn"  onClick={clearFilters}>
-            Clear Filters
+          Xóa bộ lọc
           </Button>
         </div>
   </Wrapper>

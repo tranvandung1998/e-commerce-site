@@ -24,7 +24,7 @@ const Sort = () => {
       </div>
       {/* 2nd column  */}
       <div className="product-data">
-        <p>{`${filter_products.length} Product Available`}</p>
+        <p>{`${filter_products.length} Sản phẩm có sẵn`}</p>
       </div>
 
       {/* 3rd column  */}
@@ -36,9 +36,9 @@ const Sort = () => {
             id="sort"
             className="sort-selection--style"
             onClick={sorting}>
-            <option value="lowest">Price(lowest)</option>
+            <option value="lowest">Giá(thấp nhất)</option>
             <option value="#" disabled></option>
-            <option value="highest">Price(highest)</option>
+            <option value="highest">Giá(Cao nhất)</option>
             <option value="#" disabled></option>
             <option value="a-z">(a-z)</option>
             <option value="#" disabled></option>

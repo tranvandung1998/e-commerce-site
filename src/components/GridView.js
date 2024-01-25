@@ -80,8 +80,9 @@ const Wrapper = styled.section`
     }
 
     h3 {
-      color: ${({ theme }) => theme.colors.text};
+      color: rgb(175 44 44 / 80%);
       text-transform: capitalize;
+      padding: 10px;
     }
 
     .btn {

@@ -23,7 +23,7 @@ return (
     <Wrapper>
       <div className="icon-style">
         {ratingStar}
-        <p>({reviews} customer reviews)</p>
+        <p>({reviews} Đánh Giá)</p>
       </div>
     </Wrapper>
   );

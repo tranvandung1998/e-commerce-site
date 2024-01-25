@@ -15,7 +15,11 @@ const Cart = () => {
   if(cart.length === 0) {
     return (
       <EmptyDiv>
-        <h3>No Cart In Item</h3>
+        <h3>Giỏ Hàng Trống</h3>
+        <img style={{width: 300}} src="https://png.pngtree.com/png-vector/20190114/ourlarge/pngtree-vector-sad-emoticon-icon-png-image_313016.jpg"/>
+        <NavLink to="/products">
+            <Button> Mua Sắm </Button>
+        </NavLink>
       </EmptyDiv>
 
     )
@@ -30,11 +34,11 @@ const Cart = () => {
         </div>
       )}
       <div className="cart_heading grid grid-five-column">
-        <p>Item</p>
-        <p className="cart-hide">Price</p>
-        <p>Quantity</p>
-        <p className="cart-hide">Subtotal</p>
-        <p> Remove</p>
+        <p>Sản Phẩm</p>
+        <p className="cart-hide">Giá</p>
+        <p>Số Lượng</p>
+        <p className="cart-hide">Tổng</p>
+        <p> Xóa</p>
 
       </div>
       <hr/>
@@ -46,29 +50,29 @@ const Cart = () => {
       <hr/>
       <div className="cart-two-button">
           <NavLink to="/products">
-            <Button> continue Shopping </Button>
+            <Button> Tiếp Tục Mua Sắm </Button>
           </NavLink>
           <Button className="btn btn-clear" onClick={clearCart}>
-            clear cart
+            Xóa Giỏ Hàng
           </Button>
         </div>
         <div className="order-total--amount">
           <div className="order-total--subdata">
             <div>
-              <p>subtotal:</p>
+              <p>Tổng:</p>
               <p style={{color:'black'}}>
                 <FormatPrice price={total_price} />
               </p>
             </div>
             <div>
-              <p>Delivery Charge:</p>
+              <p>Phí Vận Chuyển:</p>
               <p style={{color:'black'}}>
                 <FormatPrice price={shipping_fee} />
               </p>
             </div>
             <hr />
             <div>
-              <p>order total:</p>
+              <p>Tổng Thanh Toán:</p>
               <p style={{color:'black'}}>
                 <FormatPrice price={shipping_fee + total_price} />
               </p>

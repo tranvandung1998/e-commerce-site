@@ -12,7 +12,7 @@ const Service = () => {
           <div className="services-1">
             <div>
               <TbTruckDelivery className="icon" />
-              <h3>Super Fast and Free Delivery</h3>
+              <h3>Giao hàng siêu nhanh và miễn phíy</h3>
             </div>
           </div>
 
@@ -20,13 +20,13 @@ const Service = () => {
             <div className="services-colum-2">
               <div>
                 <MdSecurity className="icon" />
-                <h3>Non-contact Shipping</h3>
+                <h3>Vận chuyển không tiếp xúc</h3>
               </div>
             </div>
             <div className="services-colum-2">
               <div>
                 <GiReceiveMoney className="icon" />
-                <h3>Money-back Guaranteed</h3>
+                <h3>Đảm bảo hoàn lại tiền</h3>
               </div>
             </div>
           </div>
@@ -34,7 +34,7 @@ const Service = () => {
           <div className="services-3">
             <div>
               <RiSecurePaymentLine className="icon" />
-              <h3>Super Secure Payment System</h3>
+              <h3>Hệ thống thanh toán siêu an toàn</h3>
             </div>
           </div>
         </div>

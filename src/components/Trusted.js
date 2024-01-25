@@ -4,7 +4,7 @@ const Trusted = () => {
   return (
     <Wrapper className="brand-section">
       <div className="container">
-        <h3>Trusted By 1000+ Companies</h3>
+        <h3>Được tin cậy bởi hơn 1000 công ty</h3>
         <div className="brand-section-slider">
           {/* my 1st img  */}
           <div className="slide">

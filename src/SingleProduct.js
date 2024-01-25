@@ -11,7 +11,7 @@ import { TbTruckDelivery, TbReplace } from "react-icons/tb";
 import Star from "./components/Star";
 import AddToCart from "./components/AddToCart";
 
-const API = "https://testapi.io/api/DungTran/https://testapi.io/api/DungTran/product";
+const API = "https://api.pujakaitem.com/api/products";
 
 const SingleProduct = () => {
   const { getSingleProduct, isSingleLoading, singleProduct } =
@@ -34,9 +34,8 @@ const SingleProduct = () => {
 
   useEffect(() => {
     getSingleProduct(`${API}?id=${id}`);
+    console.log(`${API}?id=${id}`);
   }, []);
-
-
 
  if (isSingleLoading) {
     return <div className="page_loading">Loading.....</div>;
@@ -58,44 +57,39 @@ const SingleProduct = () => {
             <Star stars={stars} reviews={reviews} />
 
             <p className="product-data-price">
-              MRP:
+              Giá Gốc:
               <del>
                 <FormatPrice price={price + 250000} />
               </del>
             </p>
             <p className="product-data-price product-data-real-price">
-              Deal of the Day: <FormatPrice price={price} />
+              Hôm Nay: <FormatPrice price={price} />
             </p>
             <p>{description}</p>
             <div className="product-data-warranty">
               <div className="product-warranty-data">
                 <TbTruckDelivery className="warranty-icon" />
-                <p>Free Delivery</p>
+                <p>Miễn Phí Vận Chuyển</p>
               </div>
 
               <div className="product-warranty-data">
                 <TbReplace className="warranty-icon" />
-                <p>30 Days Replacement</p>
-              </div>
-
-              <div className="product-warranty-data">
-                <TbTruckDelivery className="warranty-icon" />
-                <p>Sasto Bazar Delivered </p>
+                <p>Đổi Trả Trong 30 ngày </p>
               </div>
 
               <div className="product-warranty-data">
                 <MdSecurity className="warranty-icon" />
-                <p>2 Year Warranty </p>
+                <p>Bảo Hành 2 Năm</p>
               </div>
             </div>
 
             <div className="product-data-info">
               <p>
-                Available:
-                <span> {stock > 0 ? "In Stock" : "Not Available"}</span>
+              Có Sẵn Tại:
+                <span> {stock > 0 ? "Hà Nội Shop" : "Not Available"}</span>
               </p>
               <p>
-                Brand :<span> {company} </span>
+              Thương Hiệu  :<span> {company} </span>
               </p>
             </div>
             <hr />
@@ -125,6 +119,10 @@ const Wrapper = styled.section`
     align-items: flex-start;
     justify-content: center;
     gap: 2rem;
+
+    h2 {
+      text-transform: uppercase;
+    }
 
     .product-data-warranty {
       width: 100%;

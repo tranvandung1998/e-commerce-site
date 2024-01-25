@@ -11,13 +11,14 @@ const Footer = () => {
         <section className="contact-short">
           <div className="grid grid-two-column">
             <div>
-              <h3>Ready to get started?</h3>
-              <h3>Talk to us today</h3>
+              <h3>Sẵn sàng để bắt đầu?</h3>
+              <br></br>
+              <h3>Nói chuyện với chúng tôi</h3>
             </div>
 
             <div>
               <Button className="btn hireme-btn">
-                <NavLink to="/Contact"> Get Started </NavLink>
+                <NavLink to="/Contact"> Bắt đầu </NavLink>
               </Button>
             </div>
           </div>
@@ -27,15 +28,15 @@ const Footer = () => {
         <footer>
           <div className="container grid grid-four-column">
             <div className="footer-about">
-              <h3>Đến Với Shop Mobile</h3>
+              <h3>Đến Với Hà Nội Shop</h3>
               <p>Điểm đến duy nhất của bạn để mua sắm trực tuyến chất lượng và giá cả phải chăng! </p>
             </div>
             <div className="footer-subscribe">
               <h3>Đăng ký để nhận thông tin cập nhật quan trọng</h3>
               <form action="#">
-                <input type="email" name="email" placeholder="YOUR E-MAIL" />
+                <input type="email" name="email" placeholder="Email" />
 
-                <input type="submit" value="subscribe" />
+                <input type="submit" value="Gửi" />
               </form>
             </div>
             <div className="footer-social">
@@ -67,11 +68,11 @@ const Footer = () => {
             <hr />
             <div className="container grid grid-two-column ">
               <p>
-                @{new Date().getFullYear()} Sasto Bazar. All Rights Reserved
+                @{new Date().getFullYear()} Hà Nội Shop. Đăng Kí Bản Quyền
               </p>
               <div>
-                <p>PRIVACY POLICY</p>
-                <p>TERMS & CONDITIONS</p>
+                <p>Chính Sách Bảo Mật</p>
+                <p>Điều Khoản Và Điều Kiện</p>
               </div>
             </div>
           </div>

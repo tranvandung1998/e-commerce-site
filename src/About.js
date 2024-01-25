@@ -7,13 +7,13 @@ const About = () => {
   const { myName } = useProductContext()
   const data ={
     name:" Ecomerce Website",
-    additionalText: "Discover a wide variety of products and enjoy a seamless shopping experience with Sasto Bazar. Our commitment to quality and affordability ensures that you find the best deals on the products you love.",
+    additionalText: "Khám phá nhiều loại sản phẩm và tận hưởng trải nghiệm mua sắm liền mạch với Hà Nội Shop. Cam kết của chúng tôi về chất lượng và giá cả phải chăng đảm bảo rằng bạn tìm được những ưu đãi tốt nhất cho các sản phẩm bạn yêu thích.",
     
   }
   return (
   <>
     {myName}
-    <HeroSection myData={{ ...data, imageSrc: aboutimg  }}/>
+    <HeroSection myData={{ ...data, imageSrc: "https://dongphucvina.vn/wp-content/uploads/2023/06/logo-thu-do-ha-noi-dongphucvina.vn_.png"  }}/>
     </>
     
   )

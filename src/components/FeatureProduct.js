@@ -13,8 +13,7 @@ const FeatureProduct = () => {
   return (
     <Wrapper className="section">
       <div className="container">
-        <div className="intro-data">Check Now!</div>
-        <div className="common-heading">Our Feature Services</div>
+        <div className="common-heading">Dịch vụ tính năng</div>
         <div className="grid grid-three-column">
           {featureProducts.map((curElem) => {
             return <Product key={curElem.id} {...curElem} />;
@@ -94,8 +93,9 @@ const Wrapper = styled.section`
     }
 
     h3 {
-      color: ${({ theme }) => theme.colors.text};
+      color: rgb(175 44 44 / 80%);
       text-transform: capitalize;
+      padding: 10px;
     }
 
     .card-data--price {

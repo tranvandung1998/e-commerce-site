@@ -10,10 +10,10 @@ const HeroSection = ({ myData }) => {
       <div className="container">
         <div className="grid grid-two-column">
           <div className="hero-section-data">
-            <h1 className="intro-data">WELCOME TO</h1>
-            <h2> {name} </h2>
+            <h1 className="intro-data">CHÀO MỪNG BẠN ĐẾN</h1>
+            <h2> HÀ NỘI SHOP </h2>
             <p >
-            Your one-stop destination for affordable and quality online shopping! At Sasto Bazar, we believe in making e-commerce accessible to everyone by offering a diverse range of products at unbeatable prices.
+            Điểm đến duy nhất của bạn để mua sắm trực tuyến chất lượng và giá cả phải chăng! Tại Hà Nội Shop, chúng tôi tin tưởng vào việc giúp mọi người có thể tiếp cận thương mại điện tử bằng cách cung cấp nhiều loại sản phẩm với mức giá cạnh tranh nhất.
             </p>
             {additionalText && (
               <p>
@@ -21,17 +21,17 @@ const HeroSection = ({ myData }) => {
               </p>
             )}
            <NavLink to="/products">
-              <Button>Shop Now</Button>
+              <Button>Mua ngay</Button>
             </NavLink>
           </div>
         
           <div className="hero-section-image">
             <figure>
             <img
-                   src={imageSrc || "images/hero1.jpg"}
-                  alt=" Hero Section Image"
-                  className="img-style"
-                />
+                src={imageSrc || "images/hero1.jpg"}
+                alt=" Hero Section Image"
+                className="img-style"
+            />
             </figure>
           </div>
         </div>

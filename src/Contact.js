@@ -38,16 +38,16 @@ const Contact = () => {
 
   return (
   <Wrapper>
-     <h2  className="common-heading"> Contact page</h2>
-     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7066.7446905617335!2d85.32040386527196!3d27.67488450139201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19cf67d0be7b%3A0x8a4a556b643c1f14!2sDhaugal%20Bazaar!5e0!3m2!1sen!2snp!4v1702487395939!5m2!1sen!2snp"
-      width="100%" 
-      height="400" 
-      style={{ border:0 }}
-      allowFullScreen=""
-      loading="lazy" 
-      referrerPolicy="no-referrer-when-downgrade">
-
+     <h2  className="common-heading">Liên Hệ</h2>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6119982442244!2d105.85444411542914!3d21.0285116359701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab7b79c69ad7%3A0x9718dd75d1f855e7!2zSMO6YSBOxrDGoW5nLCBIw6AgTm9uIELGoW5nLCBWaW5oIFRoYWnhu4FuLCBI4buNYyBO4bqtcCwgVmluYW5hLCBRdeG6oW0gxJDDoCBOw6AgTuG7mWk!5e0!3m2!1sen!2snp!4v1702487395939!5m2!1sen!2snp" 
+        width="100%" 
+        height="400" 
+        style={{ border:0 }} 
+        allowFullScreen="" 
+        loading="lazy" 
+        referrerPolicy="no-referrer-when-downgrade">
       </iframe>
+
 
       <div className="container">
         <div className="contact-form">
@@ -57,7 +57,7 @@ const Contact = () => {
             className="contact-inputs">
             <input
               type="text"
-              placeholder="username"
+              placeholder="tên của bạn"
               name="username"
               value={isAuthenticated ? user.name : ""}
               required
@@ -79,9 +79,9 @@ const Contact = () => {
               rows="10"
               required
               autoComplete="off"
-              placeholder="Enter you message"></textarea>
+              placeholder="Nhập văn bản"></textarea>
 
-            <input type="submit" value="send" />
+            <input type="submit" value="Gửi" />
           </form>
         </div>
       </div>

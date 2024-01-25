@@ -182,7 +182,7 @@ const Nav = () => {
               to="/"
               className="navbar-link "
               onClick={() => setMenuIcon(false)}>
-              Home
+              TRANG CHỦ
             </NavLink>
           </li>
           <li>
@@ -190,7 +190,7 @@ const Nav = () => {
               to="/about"
               className="navbar-link "
               onClick={() => setMenuIcon(false)}>
-              About
+              VỀ CHÚNG TÔI
             </NavLink>
           </li>
           <li>
@@ -198,7 +198,7 @@ const Nav = () => {
               to="/products"
               className="navbar-link "
               onClick={() => setMenuIcon(false)}>
-              Products
+                SẢN PHẨM
             </NavLink>
           </li>
           <li>
@@ -206,7 +206,7 @@ const Nav = () => {
               to="/contact"
               className="navbar-link "
               onClick={() => setMenuIcon(false)}>
-              Contact
+              LIÊN HỆ
             </NavLink>
           </li>
           {
